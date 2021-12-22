@@ -3,10 +3,19 @@
 #include <stdio.h>
 #include <math.h>
 
+float can_bac_n(int n, float x) {
+    return pow(x, 1.0 / n);
+}
+
 int main() {
-    int n, x;
+    int n;
+    float res;
+    float x;
 
-    scanf("%d%d", &n, &x);
+    scanf("%d%f", &n, &x);
 
+    res = can_bac_n(n, x);
+
+    printf("%f", res);
     
 }
